@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="TAI Analytics — Inventory Risk & OTB Discipline">
+  <section style="padding:56px 0 24px;">
+    <div class="container">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <span class="badge">Executive-grade governance</span>
+        <span class="badge">SKU × Location monitoring</span>
+      </div>
+
+      <h1 style="margin:18px 0 0;font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:900;">
+        Feels like money — because it protects money.
+      </h1>
+
+      <p style="margin:14px 0 0;max-width:820px;font-size:18px;line-height:1.6;color:rgba(17,24,39,.65);">
+        Continuous monitoring of overbuy exposure: WOS drift, pipeline pressure, velocity decline, and OTB discipline —
+        with <strong>NEW / PERSISTING / RESOLVED</strong> accountability each run.
+      </p>
+
+      <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn primary" href="#assessment">Free risk assessment</a>
+        <a class="btn ghost" href="https://app.taianalytics.ai/login">Open the app</a>
+        <a class="btn ghost" href="/approach">See approach</a>
+      </div>
+
+      <div class="grid cols-3" style="margin-top:28px;">
+        <div class="card kpi">
+          <div class="label">Excess inventory at risk</div>
+          <div class="value">$412,870</div>
+          <div class="sub">Example output (demo)</div>
+        </div>
+        <div class="card kpi">
+          <div class="label">High-risk SKU×Loc</div>
+          <div class="value">37</div>
+          <div class="sub">NEW: 12 • RESOLVED: 9</div>
+        </div>
+        <div class="card kpi">
+          <div class="label">OTB variance</div>
+          <div class="value">+19.2%</div>
+          <div class="sub">3 months above plan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:28px 0 56px;">
+    <div class="container">
+      <div class="grid cols-3">
+        <div class="card" style="padding:22px;">
+          <div style="font-size:12px;font-weight:800;letter-spacing:.18em;color:rgba(17,24,39,.55);">CAPITAL AT RISK</div>
+          <div style="margin-top:10px;font-size:18px;font-weight:900;">Quantify excess exposure</div>
+          <p style="margin-top:10px;color:rgba(17,24,39,.65);line-height:1.6;">
+            WOS + pipeline pressure translated into dollars. Designed for CFO readability.
+          </p>
+        </div>
+
+        <div class="card" style="padding:22px;">
+          <div style="font-size:12px;font-weight:800;letter-spacing:.18em;color:rgba(17,24,39,.55);">DISCIPLINE</div>
+          <div style="margin-top:10px;font-size:18px;font-weight:900;">OTB governance & drift</div>
+          <p style="margin-top:10px;color:rgba(17,24,39,.65);line-height:1.6;">
+            Highlights persistent overruns and recurring drivers, with an audit trail each run.
+          </p>
+        </div>
+
+        <div class="card" style="padding:22px;">
+          <div style="font-size:12px;font-weight:800;letter-spacing:.18em;color:rgba(17,24,39,.55);">ACCOUNTABILITY</div>
+          <div style="margin-top:10px;font-size:18px;font-weight:900;">NEW / RESOLVED reporting</div>
+          <p style="margin-top:10px;color:rgba(17,24,39,.65);line-height:1.6;">
+            Every run shows what is new, what is persisting, and what got fixed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="assessment" style="padding:56px 0;background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="container">
+      <div class="grid cols-2" style="align-items:start;">
+        <div>
+          <div style="font-size:12px;font-weight:800;letter-spacing:.18em;color:rgba(17,24,39,.55);">START HERE</div>
+          <h2 style="margin:10px 0 0;font-size:34px;font-weight:950;">Inventory Risk Assessment</h2>
+          <p style="margin-top:10px;color:rgba(17,24,39,.65);line-height:1.7;">
+            Send weekly extracts (Sales + Stock; optionally PO + Cost). We return an executive report: capital at risk,
+            top drivers, and a monitoring plan.
+          </p>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+            <a class="btn primary" href="https://calendly.com/" target="_blank" rel="noreferrer">Book a call</a>
+            <a class="btn ghost" href="https://app.taianalytics.ai/login">Try the app</a>
+          </div>
+        </div>
+
+        <div class="card" style="padding:22px;">
+          <div style="font-weight:900;">What you send</div>
+          <div class="hr" style="margin:12px 0;"></div>
+          <div style="display:grid;gap:10px;color:rgba(17,24,39,.70);">
+            <div><strong>Sales (weekly)</strong><div style="font-size:12px;color:rgba(17,24,39,.55);">week_start_date, sku, location, sales_units, sales_value</div></div>
+            <div><strong>Stock (weekly)</strong><div style="font-size:12px;color:rgba(17,24,39,.55);">week_start_date, sku, location, on_hand_units</div></div>
+            <div><strong>Open PO (optional)</strong><div style="font-size:12px;color:rgba(17,24,39,.55);">as_of_date, sku, location, on_order_units</div></div>
+            <div><strong>Cost (optional)</strong><div style="font-size:12px;color:rgba(17,24,39,.55);">sku, unit_cost</div></div>
+            <div><strong>Hierarchy (optional)</strong><div style="font-size:12px;color:rgba(17,24,39,.55);">sku, dept, class, subclass</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
